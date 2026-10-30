@@ -1,0 +1,36 @@
+<div id="div-form">
+    
+    <body>
+       <title>Produtos</title> 
+       
+       <h1>Nossos produtos</h1>
+
+       <p>Busque por nome ou filtre por categoria.</p>
+    </body>
+<main>
+  <form id="listagem_produto">
+        <label for="buscar">Buscar Produto</label>
+        <input type="text" name="buscar" id="buscar" class="buscar_produto"   placeholder="Buscar o produto">
+
+      <select id="ordem">
+          <option value="nome">Nome</option>
+          <option value="menor">Menor preço</option>
+          <option value="maior">Maior preço</option>
+      </select>
+
+      <p id="contagem" aria-live="polite"></p>
+      <ul id="lista"></ul>
+      <p id="vazio" hidden>Nenhum produto encontrado. Tente outro termo ou categoria.</p>
+      <h3>Filtros</h3>
+      <body>
+        <button id="escolha">Todos</button> |
+       <button id="escolha">Rosto</button> |
+       <button id="escolha">Corpo</button> |
+       <button id="escolha">Cabelo</button> |
+      <button id="escolha">Serviços</button>
+      </body>
+      
+ </form>
+ 
+</main>
+</div>
