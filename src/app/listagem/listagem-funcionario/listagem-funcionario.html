@@ -1,5 +1,42 @@
-<div id="div-form">
-     <form id=""></form>
+<div id="div-lista">
+    <body>
+
+       <h1>Funcionários</h1>
+       <p>Busque por nome, e-mail ou  CPF, ou filtre por cargo.</p>
+   
+    </body>
+<main>
+<section aria-label="filtros">
+    <input id= "buscar" type="search" placeholder="Buscar funcionário" aria-label="Buscar funcionário">
+    <select id="cargo" aria-label="Filtrar por cargo">
+        <option value="">Todos os cargos</option>
+    </select>
+    <label>
+        <input id="ativos" type="checkbox" > Somente ativos 
+    </label>
+</section>
+
+<p id="contagem" aria-live="polite"></p>
+
+<table id="tabela">
+   <thead>
+    <tr>
+        <th>Nome |</th>
+        <th>CPF |</th>
+        <th>Cargo |</th>
+        <th>Admissão |</th>
+        <th>E-mail |</th>
+        <th>Telefone |</th>
+        <th>Situação</th>  
+      
+    </tr>
+   </thead>
+   <tbody id="corpo"></tbody>
+</table>
+ <p id="vazio" hidden>Nenhum funcionário encontrado. Tente outro termo ou filtro.</p>
+
+
+</main>
 
 
 
