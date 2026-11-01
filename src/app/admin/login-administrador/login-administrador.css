@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div-form {
+    background: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#div-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+#login_admin {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#login_admin label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input01 {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input01:focus {
+    border-color: #4a6cf7;
+    box-shadow: 0 0 0 3px rgba(74, 108, 247, 0.2);
+}
+
+#div-btns {
+    margin-top: 8px;
+}
+
+#div-btns button {
+    width: 100%;
+    padding: 12px;
+    background: #4a6cf7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+#div-btns button:hover {
+    background: #3a58d6;
+}
+
+#div-btns button:active {
+    transform: scale(0.98);
+}
