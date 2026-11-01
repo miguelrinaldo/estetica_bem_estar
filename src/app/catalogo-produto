@@ -1,0 +1,16 @@
+<div id="div-catalogo">
+<main>
+  <h1>Catálogo de produtos</h1>
+  <p class="sub">Filtre por categoria ou busque pelo nome.</p>
+
+  <div class="tools">
+    <input type="search" id="q" placeholder="Buscar produto" aria-label="Buscar produto">
+  </div>
+
+  <div class="bar" id="filters" role="group" aria-label="Categorias"></div>
+  <div id="count" aria-live="polite"></div>
+  <div class="grid" id="grid"></div>
+</main>
+
+
+</div>
