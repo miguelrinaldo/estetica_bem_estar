@@ -1,0 +1,41 @@
+<div id="div-estoque">
+ <body>
+    <h1>Controle de estoque</h1>
+ </body>
+
+ <label for="estocagem"> <h3>Estocagem dos produtos</h3></label>
+ <section class="input03" aria-label="input03">
+    <div class="itens"><span>Itens cadastrados</span><strong id="itens">: 0</strong></div>
+    <div class="unidade"><span>Unidade em estoque</span><strong id="unidade">: 0</strong></div>
+    <div class="valor"><span>Valor em estoque</span><strong id="valor">: R$0,00</strong></div>
+    <div class="alerta_estoque"><span>Estoque baixo ou zerado</span><strong id="alerta_estoque">: 0</strong></div>
+ </section>
+
+
+  <div class="busca">
+    <input type="search" id="q" placeholder="Buscar produto" aria-label="Buscar produto">
+    <select id="sit" aria-label="Situação">
+      <option value="todas">Todas as situações</option>
+      <option value="estoque_cheio">Em estoque</option>
+      <option value="estoque_baixo">Estoque baixo</option>
+      <option value="estoque_zerado">Estoque zerado</option>
+    </select>
+  </div>
+
+
+
+  <div id="filtro" role="group" aria-label="estoques"></div>
+  <button class="filtros" data-cat="codigo_produto">Cód. Produto </button>
+  <button class="filtros" data-cat="codigo_produto">Categoria </button>
+  <button class="filtros" data-cat="codigo_produto">Preço</button>
+  <button class="filtros" data-cat="codigo_produto">Quantidade</button>
+  <button class="filtros" data-cat="codigo_produto">Valor Total</button>
+  <button class="filtros" data-cat="codigo_produto">Situação</button>
+
+  
+    <div class="vazio" id="vazio" hidden>Nenhum item encontrado com esses filtros.</div>
+  </div>
+
+
+
+
