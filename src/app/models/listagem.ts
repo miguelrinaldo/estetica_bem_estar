@@ -1,13 +1,20 @@
-export class lista_produto {
-    id: number = 0
-    buscar: string = ''
-    ordem: number = 0
-    contagem: number = 0 
+export class Produto {
+  idItem: number;
+  item: string;
+  descricaoItem: string;
+  preco: number;
+  categoria: string;
+  tipoItem: string;
+  ativo: boolean;
 }
 
-export class listagem_funcionario {
-    id: number = 0
-    buscar: string = ''
-    cargo: string = ''
-    tabela: string = ''
+export class Funcionario {
+  idPessoa: number;
+  nome: string;
+  cpf: string;
+  cargo: string;
+  dataAdmissao: string;
+  email: string;
+  telefone: string;
+  ativo: boolean;
 }

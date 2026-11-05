@@ -1,5 +1,5 @@
-export class Login_Adm {
-    id: string = ''
+export class login_adm {
+    id: number = 0
     email: string = ''
     senha: string = ''
 
