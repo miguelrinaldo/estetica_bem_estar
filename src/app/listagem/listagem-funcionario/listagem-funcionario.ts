@@ -17,8 +17,8 @@ interface Funcionario {
   selector: 'app-funcionarios',
   standalone: true,
   imports: [NgFor, NgIf, DatePipe],
-  templateUrl: './funcionarios.component.html',
-  styleUrls: ['./funcionarios.component.css']
+  templateUrl: './listagem-funcionario.html',
+  styleUrls: ['./listagem-funcionario.css']
 })
 export class FuncionariosComponent implements OnInit {
   private readonly http = inject(HttpClient);

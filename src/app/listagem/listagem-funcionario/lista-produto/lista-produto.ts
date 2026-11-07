@@ -24,8 +24,8 @@ interface FiltroCategoria {
   selector: 'app-produtos',
   standalone: true,
   imports: [NgFor, NgIf, CurrencyPipe],
-  templateUrl: './produtos.component.html',
-  styleUrls: ['./produtos.component.css']
+  templateUrl: './lista-produto.html',
+  styleUrls: ['./lista-produto.css']
 })
 export class ProdutosComponent implements OnInit {
   private readonly http = inject(HttpClient);

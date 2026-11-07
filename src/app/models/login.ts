@@ -1,4 +1,4 @@
-export class login_adm {
+export class Login_Adm {
     id: number = 0
     email: string = ''
     senha: string = ''

@@ -4,14 +4,14 @@ import { HttpClient } from '@angular/common/http';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
-import { Login_Adm } from '../models/login_adm';
+import { Login_Adm } from '../../models/login';
 
 @Component({
-  selector: 'app-loginadmistrador',
+  selector: 'app-login-admistrador',
   standalone: true,
   imports: [NgIf, ReactiveFormsModule],
-  templateUrl: './loginadmistrador.component.html',
-  styleUrls: ['./loginadmistrador.component.css']
+  templateUrl: './login-administrador.html',
+  styleUrls: ['./login-administrador.css']
 })
 export class login_adm {
   private readonly fb = inject(FormBuilder);

@@ -12,11 +12,11 @@ interface Produto {
 }
 
 @Component({
-  selector: 'app-catalogoproduto',
+  selector: 'app-catalogo-produto',
   standalone: true,
   imports: [NgFor, NgIf, CurrencyPipe],
-  templateUrl: './catalogoproduto.component.html',
-  styleUrls: ['./catalogoproduto.component.css']
+  templateUrl: './catalogo-produto.html',
+  styleUrls: ['./catalogo-produto.css']
 })
 export class catalogo_produto implements OnInit {
   private readonly http = inject(HttpClient);

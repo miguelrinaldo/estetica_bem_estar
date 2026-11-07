@@ -1,0 +1,122 @@
+/* Configuração Geral / Reset sutil */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container Principal */
+#div-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+}
+
+/* Estrutura do Formulário */
+#login_cliente {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilização das Labels */
+label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333333;
+    font-size: 14px;
+}
+
+/* Labels de campos que vêm após outros campos (espaçamento) */
+label:not(:first-of-type) {
+    margin-top: 18px;
+}
+
+/* Campos de Texto e Data */
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* Alinhamento dos botões de rádio (Sexo) */
+#login_cliente br {
+    display: none; /* Evita quebras desnecessárias se houver */
+}
+
+/* Container simulado para agrupar os radios textualmente */
+input[type="radio"].btnSelecao {
+    margin: 10px 5px 10px 0;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+/* Estilização sutil para o texto ao lado dos radios */
+#login_cliente {
+    color: #444;
+    font-size: 14px;
+}
+
+/* Área dos Botões de Ação */
+#div-btns {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* Botões Geral */
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Botão Cadastrar (Sucesso/Principal) */
+#btnAdd {
+    background-color: #28a745;
+    color: white;
+}
+
+#btnAdd:hover {
+    background-color: #218838;
+}
+
+/* Botão Excluir/Limpar (Aviso/Secundário) */
+#btnLimpar {
+    background-color: #dc3545;
+    color: white;
+}
+
+#btnLimpar:hover {
+    background-color: #c82333;
+}

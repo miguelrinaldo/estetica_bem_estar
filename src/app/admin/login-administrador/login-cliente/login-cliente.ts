@@ -34,8 +34,8 @@ function cpfValidator(control: AbstractControl): ValidationErrors | null {
   selector: 'app-logincliente',
   standalone: true,
   imports: [NgIf, ReactiveFormsModule],
-  templateUrl: './logincliente.component.html',
-  styleUrls: ['./logincliente.component.css']
+  templateUrl: './login-cliente.html',
+  styleUrls: ['./login-cliente.css']
 })
 export class LoginclienteComponent {
   private readonly fb = inject(FormBuilder);

@@ -23,8 +23,8 @@ interface LinhaEstoque extends ItemEstoque {
   selector: 'app-estoque',
   standalone: true,
   imports: [NgFor, NgIf, CurrencyPipe],
-  templateUrl: './estoque.component.html',
-  styleUrls: ['./estoque.component.css']
+  templateUrl: './estoque.html',
+  styleUrls: ['./estoque.css']
 })
 export class EstoqueComponent implements OnInit {
   private readonly http = inject(HttpClient);
